@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Test</title>
+	</head>
+	<body>
+		<div>{{.Title}}</div>
+        <div>
+            {{range $i, $e := .Story}}
+                {{$e}}
+            {{end}}
+        </div>
+        <div>
+            <h3>Options:</h3>
+            {{range $i, $e := .Options}}
+                <a>{{$e.Arc}}</a>
+                {{$e.Text}}
+            {{end}}
+        </div>
+          
+	</body>
+</html>
